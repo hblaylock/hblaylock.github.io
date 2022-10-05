@@ -1,12 +1,14 @@
 <html>
 
-    <head>
-        <title>My Home Page</title>
-    </head>
+<head>
+  <title>Plotly Demo</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <center>
+    <center>
         <ul>
             <a href="index.html">Home</a>
             <a href="heading.html">Heading Demo</a>
@@ -21,18 +23,17 @@
             <a href="plotlydemo.html">Plotly Demo</a>
 
         </ul>
-        </center>
+    </center>
 
-        <p>Welcome to my IST 226 Homepage!</p>
+  <div id="plot"></div>
 
-        <footer>
-            <center>
-                <hr>
-                <P>&copy; IST 226 2022 </P>
-            </center>
+  <select id="selDataset">
+    <option value="dataset1">DataSet1</option>
+    <option value="dataset2">DataSet2</option>
+  </select>
 
-        </footer>
+  <script src="plots.js"></script>
 
-    </body>
+</body>
 
 </html>
